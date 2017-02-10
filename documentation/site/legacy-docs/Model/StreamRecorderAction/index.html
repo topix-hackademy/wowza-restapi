@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="TOP-IX HackAdemy">
+        <link rel="canonical" href="http://top-ix.org/legacy-docs/Model/StreamRecorderAction/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>StreamRecorderAction - Wowza-Rest Api Documentation</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Wowza-Rest Api Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legacy-Docs Api <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../Api/RestinfoApi/">RestinfoApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VmachinemonitoringcurrentApi/">VmachinemonitoringcurrentApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VmachinemonitoringhistoricApi/">VmachinemonitoringhistoricApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversApi/">VserversApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamelicensesApi/">VserversserverNamelicensesApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamelistenersApi/">VserversserverNamelistenersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamelogjApi/">VserversserverNamelogjApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamemediacacheApi/">VserversserverNamemediacacheApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamemediacastersApi/">VserversserverNamemediacastersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamemonitoringApi/">VserversserverNamemonitoringApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamepublishersApi/">VserversserverNamepublishersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamestatusApi/">VserversserverNamestatusApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNametranscoderApi/">VserversserverNametranscoderApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNametuneApi/">VserversserverNametuneApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNameusersApi/">VserversserverNameusersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamevhostsApi/">VserversserverNamevhostsApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Api/VserversserverNamevhostsvhostNameapplicationsApi/">VserversserverNamevhostsvhostNameapplicationsApi</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legacy-Docs Model <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../StartupStreamsConfig/">StartupStreamsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamConfigurationConfig/">StreamConfigurationConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFileAction/">StreamFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFileAppAction/">StreamFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFileAppConfig/">StreamFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFileAppConfigAdv/">StreamFileAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFileConfig/">StreamFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFileConfigAdv/">StreamFileConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFilesAppConfig/">StreamFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamFilesConfig/">StreamFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamGroupAction/">StreamGroupAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamGroupConfig/">StreamGroupConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamGroupsConfig/">StreamGroupsConfig</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">StreamRecorderAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamRecorderConfig/">StreamRecorderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StreamRecordersConfig/">StreamRecordersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderAppConfig/">TranscoderAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderAppConfigAdv/">TranscoderAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderConfig/">TranscoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderEncodeAppConfig/">TranscoderEncodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderEncodeAppConfigAdv/">TranscoderEncodeAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderEncodeConfig/">TranscoderEncodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderEncodeConfigAdv/">TranscoderEncodeConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderEncodesAppConfig/">TranscoderEncodesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderEncodesConfig/">TranscoderEncodesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderMemberConfig/">TranscoderMemberConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderOverlayDecodeAppConfig/">TranscoderOverlayDecodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderOverlayDecodeConfig/">TranscoderOverlayDecodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderOverlayEncodeAppConfig/">TranscoderOverlayEncodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderOverlayEncodeConfig/">TranscoderOverlayEncodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderStreamNameGroupAppConfig/">TranscoderStreamNameGroupAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderStreamNameGroupConfig/">TranscoderStreamNameGroupConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderStreamNameGroupsAppConfig/">TranscoderStreamNameGroupsAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderStreamNameGroupsConfig/">TranscoderStreamNameGroupsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplateAction/">TranscoderTemplateAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplateAppAction/">TranscoderTemplateAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplateAppConfig/">TranscoderTemplateAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplateAppConfigAdv/">TranscoderTemplateAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplateConfig/">TranscoderTemplateConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplateConfigAdv/">TranscoderTemplateConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplatesAppConfig/">TranscoderTemplatesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../TranscoderTemplatesConfig/">TranscoderTemplatesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../UserConfig/">UserConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../UsersConfig/">UsersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VHostAction/">VHostAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VHostConfig/">VHostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VHostConfigAdv/">VHostConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VHostShortObject/">VHostShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VHostTuneConfig/">VHostTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VHostsConfig/">VHostsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VerimatrixStreamMapConfig/">VerimatrixStreamMapConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VerimatrixStreamMapsConfig/">VerimatrixStreamMapsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VideoSettings/">VideoSettings</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../WMSLoggerConfig/">WMSLoggerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../AdvancedSetting/">AdvancedSetting</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../AppShortObject/">AppShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ApplicationAction/">ApplicationAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ApplicationConfig/">ApplicationConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ApplicationConfigAdv/">ApplicationConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ApplicationsConfig/">ApplicationsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../BuyDRMStreamMapConfig/">BuyDRMStreamMapConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../BuyDRMStreamMapsConfig/">BuyDRMStreamMapsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../CurrentApplicationStatistics/">CurrentApplicationStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../CurrentIncomingStreamStatistics/">CurrentIncomingStreamStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../CurrentMachineStatistics/">CurrentMachineStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../CurrentVHostStatistics/">CurrentVHostStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DRMConfig/">DRMConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DRMConfigAdv/">DRMConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DVRConfig/">DVRConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DVRConfigAdv/">DVRConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DefaultStreamRecorderConfig/">DefaultStreamRecorderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DvrRESTConverterStore/">DvrRESTConverterStore</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DvrRESTConverterStoreAction/">DvrRESTConverterStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DvrRESTConverterStores/">DvrRESTConverterStores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../DvrRESTConverterStoresAction/">DvrRESTConverterStoresAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HistoricApplicationStatistics/">HistoricApplicationStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HistoricMachineStatistics/">HistoricMachineStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HistoricServerStatistics/">HistoricServerStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HistoricVHostStatistics/">HistoricVHostStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HostPortConfig/">HostPortConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HostPortConfigAdv/">HostPortConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HostPortsConfig/">HostPortsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../HostportsTuneConfig/">HostportsTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../IncomingStreamAction/">IncomingStreamAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../IncomingStreamConfig/">IncomingStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../InstanceAction/">InstanceAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../InstanceConfig/">InstanceConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../InstancesConfig/">InstancesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Integer/">Integer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../LiveEncoderConfig/">LiveEncoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Log4jAction/">Log4jAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Log4js/">Log4js</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Log4jsAction/">Log4jsAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Long/">Long</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheApplicationStoreAction/">MediaCacheApplicationStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheConfig/">MediaCacheConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheConfig3/">MediaCacheConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheConfigAdv/">MediaCacheConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheSourceConfig/">MediaCacheSourceConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheSourceConfig3/">MediaCacheSourceConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheSourceConfigAdv/">MediaCacheSourceConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheSourceConfigAdv3/">MediaCacheSourceConfigAdv3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheSourcesConfig/">MediaCacheSourcesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheSourcesConfig3/">MediaCacheSourcesConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheStoreAction/">MediaCacheStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheStoreConfig/">MediaCacheStoreConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheStoreConfig3/">MediaCacheStoreConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheStoreConfigAdv/">MediaCacheStoreConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheStoreList/">MediaCacheStoreList</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheStoresConfig/">MediaCacheStoresConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCacheStoresConfig3/">MediaCacheStoresConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCasterConfig/">MediaCasterConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MediaCastersConfig/">MediaCastersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ModuleConfig/">ModuleConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ModulesConfig/">ModulesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../MonitoringConfig/">MonitoringConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../OutgoingStreamConfig/">OutgoingStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../Output/">Output</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublisherAppConfig/">PublisherAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublisherConfig/">PublisherConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublisherConfig3/">PublisherConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublisherVhostConfig/">PublisherVhostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublishersAppConfig/">PublishersAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublishersConfig/">PublishersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublishersConfig3/">PublishersConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PublishersVhostConfig/">PublishersVhostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PushPublishStreamAppAction/">PushPublishStreamAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PushPublishStreamAppConfig/">PushPublishStreamAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../PushPublishStreamsAppConfig/">PushPublishStreamsAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../RESTInfoConfig/">RESTInfoConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../RTMP/">RTMP</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SDPFileAction/">SDPFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SDPFileAppAction/">SDPFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SDPFileAppConfig/">SDPFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SDPFileConfig/">SDPFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SDPFilesAppConfig/">SDPFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SDPFilesConfig/">SDPFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SMILFileAction/">SMILFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SMILFileAppAction/">SMILFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SMILFileAppConfig/">SMILFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SMILFileConfig/">SMILFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SMILFileStreamConfig/">SMILFileStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SMILFilesAppConfig/">SMILFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SMILFilesConfig/">SMILFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SSLConfig/">SSLConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SecurityConfig/">SecurityConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerAction/">ServerAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerConfig/">ServerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerConfigAdv/">ServerConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerLicensesConfig/">ServerLicensesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerListenerConfig/">ServerListenerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerListenersConfig/">ServerListenersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerLogFileConfig/">ServerLogFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerLogFileDownloadConfig/">ServerLogFileDownloadConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerLogFilesConfig/">ServerLogFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerLogShortObject/">ServerLogShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerLogTypesConfig/">ServerLogTypesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerLogsConfig/">ServerLogsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerStatusConfig/">ServerStatusConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServerTuneConfig/">ServerTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ServersConfig/">ServersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ShortObject/">ShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../ShortUrlEncoderConfig/">ShortUrlEncoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SourceControlAction/">SourceControlAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SourceControlConfig/">SourceControlConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../SourceDriverNamesList/">SourceDriverNamesList</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../StartupStreamConfig/">StartupStreamConfig</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../StreamGroupsConfig/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../StreamRecorderConfig/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/topix-hackademy/contact-tools">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#streamrecorderaction">StreamRecorderAction</a></li>
+        
+            <li><a href="#properties">Properties</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="streamrecorderaction">StreamRecorderAction</h1>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>vhostName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>instanceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>appName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>recorderName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a href="../README.md#documentation-for-models">[Back to Model list]</a> <a href="../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../README.md">[Back to README]</a></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

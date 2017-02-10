@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="TOP-IX HackAdemy">
+        <link rel="canonical" href="http://top-ix.org/legacy-docs/Api/VserversApi/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>VserversApi - Wowza-Rest Api Documentation</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Wowza-Rest Api Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legacy-Docs Api <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../RestinfoApi/">RestinfoApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VmachinemonitoringcurrentApi/">VmachinemonitoringcurrentApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VmachinemonitoringhistoricApi/">VmachinemonitoringhistoricApi</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">VserversApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamelicensesApi/">VserversserverNamelicensesApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamelistenersApi/">VserversserverNamelistenersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamelogjApi/">VserversserverNamelogjApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamemediacacheApi/">VserversserverNamemediacacheApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamemediacastersApi/">VserversserverNamemediacastersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamemonitoringApi/">VserversserverNamemonitoringApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamepublishersApi/">VserversserverNamepublishersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamestatusApi/">VserversserverNamestatusApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNametranscoderApi/">VserversserverNametranscoderApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNametuneApi/">VserversserverNametuneApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNameusersApi/">VserversserverNameusersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamevhostsApi/">VserversserverNamevhostsApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamevhostsvhostNameapplicationsApi/">VserversserverNamevhostsvhostNameapplicationsApi</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legacy-Docs Model <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../Model/StartupStreamsConfig/">StartupStreamsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamConfigurationConfig/">StreamConfigurationConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAction/">StreamFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAppAction/">StreamFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAppConfig/">StreamFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAppConfigAdv/">StreamFileAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileConfig/">StreamFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileConfigAdv/">StreamFileConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFilesAppConfig/">StreamFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFilesConfig/">StreamFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamGroupAction/">StreamGroupAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamGroupConfig/">StreamGroupConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamGroupsConfig/">StreamGroupsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamRecorderAction/">StreamRecorderAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamRecorderConfig/">StreamRecorderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamRecordersConfig/">StreamRecordersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderAppConfig/">TranscoderAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderAppConfigAdv/">TranscoderAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderConfig/">TranscoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeAppConfig/">TranscoderEncodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeAppConfigAdv/">TranscoderEncodeAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeConfig/">TranscoderEncodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeConfigAdv/">TranscoderEncodeConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodesAppConfig/">TranscoderEncodesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodesConfig/">TranscoderEncodesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderMemberConfig/">TranscoderMemberConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayDecodeAppConfig/">TranscoderOverlayDecodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayDecodeConfig/">TranscoderOverlayDecodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayEncodeAppConfig/">TranscoderOverlayEncodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayEncodeConfig/">TranscoderOverlayEncodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupAppConfig/">TranscoderStreamNameGroupAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupConfig/">TranscoderStreamNameGroupConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupsAppConfig/">TranscoderStreamNameGroupsAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupsConfig/">TranscoderStreamNameGroupsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAction/">TranscoderTemplateAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAppAction/">TranscoderTemplateAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAppConfig/">TranscoderTemplateAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAppConfigAdv/">TranscoderTemplateAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateConfig/">TranscoderTemplateConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateConfigAdv/">TranscoderTemplateConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplatesAppConfig/">TranscoderTemplatesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplatesConfig/">TranscoderTemplatesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/UserConfig/">UserConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/UsersConfig/">UsersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostAction/">VHostAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostConfig/">VHostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostConfigAdv/">VHostConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostShortObject/">VHostShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostTuneConfig/">VHostTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostsConfig/">VHostsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VerimatrixStreamMapConfig/">VerimatrixStreamMapConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VerimatrixStreamMapsConfig/">VerimatrixStreamMapsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VideoSettings/">VideoSettings</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/WMSLoggerConfig/">WMSLoggerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/AdvancedSetting/">AdvancedSetting</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/AppShortObject/">AppShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationAction/">ApplicationAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationConfig/">ApplicationConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationConfigAdv/">ApplicationConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationsConfig/">ApplicationsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/BuyDRMStreamMapConfig/">BuyDRMStreamMapConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/BuyDRMStreamMapsConfig/">BuyDRMStreamMapsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentApplicationStatistics/">CurrentApplicationStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentIncomingStreamStatistics/">CurrentIncomingStreamStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentMachineStatistics/">CurrentMachineStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentVHostStatistics/">CurrentVHostStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DRMConfig/">DRMConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DRMConfigAdv/">DRMConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DVRConfig/">DVRConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DVRConfigAdv/">DVRConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DefaultStreamRecorderConfig/">DefaultStreamRecorderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStore/">DvrRESTConverterStore</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStoreAction/">DvrRESTConverterStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStores/">DvrRESTConverterStores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStoresAction/">DvrRESTConverterStoresAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricApplicationStatistics/">HistoricApplicationStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricMachineStatistics/">HistoricMachineStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricServerStatistics/">HistoricServerStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricVHostStatistics/">HistoricVHostStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostPortConfig/">HostPortConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostPortConfigAdv/">HostPortConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostPortsConfig/">HostPortsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostportsTuneConfig/">HostportsTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/IncomingStreamAction/">IncomingStreamAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/IncomingStreamConfig/">IncomingStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/InstanceAction/">InstanceAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/InstanceConfig/">InstanceConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/InstancesConfig/">InstancesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Integer/">Integer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/LiveEncoderConfig/">LiveEncoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Log4jAction/">Log4jAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Log4js/">Log4js</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Log4jsAction/">Log4jsAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Long/">Long</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheApplicationStoreAction/">MediaCacheApplicationStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheConfig/">MediaCacheConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheConfig3/">MediaCacheConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheConfigAdv/">MediaCacheConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfig/">MediaCacheSourceConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfig3/">MediaCacheSourceConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfigAdv/">MediaCacheSourceConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfigAdv3/">MediaCacheSourceConfigAdv3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourcesConfig/">MediaCacheSourcesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourcesConfig3/">MediaCacheSourcesConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreAction/">MediaCacheStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreConfig/">MediaCacheStoreConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreConfig3/">MediaCacheStoreConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreConfigAdv/">MediaCacheStoreConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreList/">MediaCacheStoreList</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoresConfig/">MediaCacheStoresConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoresConfig3/">MediaCacheStoresConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCasterConfig/">MediaCasterConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCastersConfig/">MediaCastersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ModuleConfig/">ModuleConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ModulesConfig/">ModulesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MonitoringConfig/">MonitoringConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/OutgoingStreamConfig/">OutgoingStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Output/">Output</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherAppConfig/">PublisherAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherConfig/">PublisherConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherConfig3/">PublisherConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherVhostConfig/">PublisherVhostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersAppConfig/">PublishersAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersConfig/">PublishersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersConfig3/">PublishersConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersVhostConfig/">PublishersVhostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PushPublishStreamAppAction/">PushPublishStreamAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PushPublishStreamAppConfig/">PushPublishStreamAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PushPublishStreamsAppConfig/">PushPublishStreamsAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/RESTInfoConfig/">RESTInfoConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/RTMP/">RTMP</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileAction/">SDPFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileAppAction/">SDPFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileAppConfig/">SDPFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileConfig/">SDPFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFilesAppConfig/">SDPFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFilesConfig/">SDPFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileAction/">SMILFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileAppAction/">SMILFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileAppConfig/">SMILFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileConfig/">SMILFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileStreamConfig/">SMILFileStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFilesAppConfig/">SMILFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFilesConfig/">SMILFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SSLConfig/">SSLConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SecurityConfig/">SecurityConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerAction/">ServerAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerConfig/">ServerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerConfigAdv/">ServerConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLicensesConfig/">ServerLicensesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerListenerConfig/">ServerListenerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerListenersConfig/">ServerListenersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogFileConfig/">ServerLogFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogFileDownloadConfig/">ServerLogFileDownloadConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogFilesConfig/">ServerLogFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogShortObject/">ServerLogShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogTypesConfig/">ServerLogTypesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogsConfig/">ServerLogsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerStatusConfig/">ServerStatusConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerTuneConfig/">ServerTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServersConfig/">ServersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ShortObject/">ShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ShortUrlEncoderConfig/">ShortUrlEncoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SourceControlAction/">SourceControlAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SourceControlConfig/">SourceControlConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SourceDriverNamesList/">SourceDriverNamesList</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StartupStreamConfig/">StartupStreamConfig</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../VmachinemonitoringhistoricApi/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../VserversserverNamelicensesApi/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/topix-hackademy/contact-tools">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#wowzaapivserversapi">WowzaApi\VserversApi</a></li>
+        
+    
+        <li class="main "><a href="#getserverconfig">getServerConfig</a></li>
+        
+            <li><a href="#example">Example</a></li>
+        
+            <li><a href="#parameters">Parameters</a></li>
+        
+            <li><a href="#return-type">Return type</a></li>
+        
+            <li><a href="#authorization">Authorization</a></li>
+        
+            <li><a href="#http-request-headers">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getserverconfigadv">getServerConfigAdv</a></li>
+        
+            <li><a href="#example_1">Example</a></li>
+        
+            <li><a href="#parameters_1">Parameters</a></li>
+        
+            <li><a href="#return-type_1">Return type</a></li>
+        
+            <li><a href="#authorization_1">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_1">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getserverlogfileconfig">getServerLogFileConfig</a></li>
+        
+            <li><a href="#example_2">Example</a></li>
+        
+            <li><a href="#parameters_2">Parameters</a></li>
+        
+            <li><a href="#return-type_2">Return type</a></li>
+        
+            <li><a href="#authorization_2">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_2">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getserverlogfiledownloadconfig">getServerLogFileDownloadConfig</a></li>
+        
+            <li><a href="#example_3">Example</a></li>
+        
+            <li><a href="#parameters_3">Parameters</a></li>
+        
+            <li><a href="#return-type_3">Return type</a></li>
+        
+            <li><a href="#authorization_3">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_3">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getserverlogfilesconfig">getServerLogFilesConfig</a></li>
+        
+            <li><a href="#example_4">Example</a></li>
+        
+            <li><a href="#parameters_4">Parameters</a></li>
+        
+            <li><a href="#return-type_4">Return type</a></li>
+        
+            <li><a href="#authorization_4">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_4">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getserverlogtypesconfig">getServerLogTypesConfig</a></li>
+        
+            <li><a href="#example_5">Example</a></li>
+        
+            <li><a href="#parameters_5">Parameters</a></li>
+        
+            <li><a href="#return-type_5">Return type</a></li>
+        
+            <li><a href="#authorization_5">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_5">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getserverlogsconfig">getServerLogsConfig</a></li>
+        
+            <li><a href="#example_6">Example</a></li>
+        
+            <li><a href="#parameters_6">Parameters</a></li>
+        
+            <li><a href="#return-type_6">Return type</a></li>
+        
+            <li><a href="#authorization_6">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_6">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getserversconfig">getServersConfig</a></li>
+        
+            <li><a href="#example_7">Example</a></li>
+        
+            <li><a href="#parameters_7">Parameters</a></li>
+        
+            <li><a href="#return-type_7">Return type</a></li>
+        
+            <li><a href="#authorization_7">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_7">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getsourcedrivernameslist">getSourceDriverNamesList</a></li>
+        
+            <li><a href="#example_8">Example</a></li>
+        
+            <li><a href="#parameters_8">Parameters</a></li>
+        
+            <li><a href="#return-type_8">Return type</a></li>
+        
+            <li><a href="#authorization_8">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_8">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putserveraction">putServerAction</a></li>
+        
+            <li><a href="#example_9">Example</a></li>
+        
+            <li><a href="#parameters_9">Parameters</a></li>
+        
+            <li><a href="#return-type_9">Return type</a></li>
+        
+            <li><a href="#authorization_9">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_9">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putserverconfig">putServerConfig</a></li>
+        
+            <li><a href="#example_10">Example</a></li>
+        
+            <li><a href="#parameters_10">Parameters</a></li>
+        
+            <li><a href="#return-type_10">Return type</a></li>
+        
+            <li><a href="#authorization_10">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_10">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putserverconfigadv">putServerConfigAdv</a></li>
+        
+            <li><a href="#example_11">Example</a></li>
+        
+            <li><a href="#parameters_11">Parameters</a></li>
+        
+            <li><a href="#return-type_11">Return type</a></li>
+        
+            <li><a href="#authorization_11">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_11">HTTP request headers</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="wowzaapivserversapi">WowzaApi\VserversApi</h1>
+<p>All URIs are relative to <em>http://localhost:8087/</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#getServerConfig"><strong>getServerConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}</td>
+<td>Retrieves the Server configuration</td>
+</tr>
+<tr>
+<td><a href="./#getServerConfigAdv"><strong>getServerConfigAdv</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/adv</td>
+<td>Retrieves the advanced Server configuration</td>
+</tr>
+<tr>
+<td><a href="./#getServerLogFileConfig"><strong>getServerLogFileConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/logfiles/{logName}</td>
+<td>Retrieves the contents of a Server Log with the specified log name</td>
+</tr>
+<tr>
+<td><a href="./#getServerLogFileDownloadConfig"><strong>getServerLogFileDownloadConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/logfiles/{logName}/download</td>
+<td>Retrieves the Server Log file for the specified log name, zipped</td>
+</tr>
+<tr>
+<td><a href="./#getServerLogFilesConfig"><strong>getServerLogFilesConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/logfiles</td>
+<td>Retrieves the list of server log files</td>
+</tr>
+<tr>
+<td><a href="./#getServerLogTypesConfig"><strong>getServerLogTypesConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/logs</td>
+<td>Retrieves the list of available server Log Types</td>
+</tr>
+<tr>
+<td><a href="./#getServerLogsConfig"><strong>getServerLogsConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/logs/{logType}</td>
+<td>Retrieves the contents of multiple Server Logs with the specified type in the log name</td>
+</tr>
+<tr>
+<td><a href="./#getServersConfig"><strong>getServersConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers</td>
+<td>Retrieves the list of Servers</td>
+</tr>
+<tr>
+<td><a href="./#getSourceDriverNamesList"><strong>getSourceDriverNamesList</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/sourcecontrol/drivernames</td>
+<td>Get the list of source control drivers</td>
+</tr>
+<tr>
+<td><a href="./#putServerAction"><strong>putServerAction</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/actions/{action}</td>
+<td>Tells the Server to perform an action</td>
+</tr>
+<tr>
+<td><a href="./#putServerConfig"><strong>putServerConfig</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}</td>
+<td>Updates the Server configuration</td>
+</tr>
+<tr>
+<td><a href="./#putServerConfigAdv"><strong>putServerConfigAdv</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/adv</td>
+<td>Updates the advanced Server configuration</td>
+</tr>
+</tbody>
+</table>
+<h1 id="getserverconfig"><strong>getServerConfig</strong></h1>
+<blockquote>
+<p>\Model\ServerConfig getServerConfig($serverName)</p>
+</blockquote>
+<p>Retrieves the Server configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getServerConfig($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServerConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p><a href="../../Model/ServerConfig/"><strong>\Model\ServerConfig</strong></a></p>
+<h3 id="authorization">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getserverconfigadv"><strong>getServerConfigAdv</strong></h1>
+<blockquote>
+<p>\Model\ServerConfigAdv getServerConfigAdv($serverName)</p>
+</blockquote>
+<p>Retrieves the advanced Server configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_1">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getServerConfigAdv($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServerConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p><a href="../../Model/ServerConfigAdv/"><strong>\Model\ServerConfigAdv</strong></a></p>
+<h3 id="authorization_1">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getserverlogfileconfig"><strong>getServerLogFileConfig</strong></h1>
+<blockquote>
+<p>\Model\ServerLogFileConfig getServerLogFileConfig($serverName, $logName, $lineCount, $startOffset, $filter, $search, $regexSearch, $head, $tail)</p>
+</blockquote>
+<p>Retrieves the contents of a Server Log with the specified log name</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_2">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$logName = &quot;logName_example&quot;; // string | The name of the log
+$lineCount = &quot;100&quot;; // string | The number of log lines requested, where a postive number indicates log lines after startOffset and a negative number indicate log lines before startOffset
+$startOffset = &quot;startOffset_example&quot;; // string | The byte offset in the file at which to begin getting log lines
+$filter = &quot;filter_example&quot;; // string | A string containing a list of predefined search filters separated by | where valid strings are noDebug,noInfo,noWarn,noError,noHeader,noColumnHeadings
+$search = &quot;search_example&quot;; // string | A string containing a literal string on which to filter or a regex
+$regexSearch = &quot;false&quot;; // string | Indicates if the 'search' parameter is a regex or a literal string
+$head = &quot;head_example&quot;; // string | Returns the first x lines from the requested log file, the overrides the startoffset and linecount values
+$tail = &quot;tail_example&quot;; // string | Returns the last x lines from the requested log file, the overrides the startoffset and linecount values
+
+try {
+    $result = $api_instance-&gt;getServerLogFileConfig($serverName, $logName, $lineCount, $startOffset, $filter, $search, $regexSearch, $head, $tail);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServerLogFileConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>logName</strong></td>
+<td><strong>string</strong></td>
+<td>The name of the log</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>lineCount</strong></td>
+<td><strong>string</strong></td>
+<td>The number of log lines requested, where a postive number indicates log lines after startOffset and a negative number indicate log lines before startOffset</td>
+<td>[optional] [default to 100]</td>
+</tr>
+<tr>
+<td><strong>startOffset</strong></td>
+<td><strong>string</strong></td>
+<td>The byte offset in the file at which to begin getting log lines</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>filter</strong></td>
+<td><strong>string</strong></td>
+<td>A string containing a list of predefined search filters separated by</td>
+<td>where valid strings are noDebug,noInfo,noWarn,noError,noHeader,noColumnHeadings</td>
+</tr>
+<tr>
+<td><strong>search</strong></td>
+<td><strong>string</strong></td>
+<td>A string containing a literal string on which to filter or a regex</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>regexSearch</strong></td>
+<td><strong>string</strong></td>
+<td>Indicates if the &#39;search&#39; parameter is a regex or a literal string</td>
+<td>[optional] [default to false]</td>
+</tr>
+<tr>
+<td><strong>head</strong></td>
+<td><strong>string</strong></td>
+<td>Returns the first x lines from the requested log file, the overrides the startoffset and linecount values</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tail</strong></td>
+<td><strong>string</strong></td>
+<td>Returns the last x lines from the requested log file, the overrides the startoffset and linecount values</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_2">Return type</h3>
+<p><a href="../../Model/ServerLogFileConfig/"><strong>\Model\ServerLogFileConfig</strong></a></p>
+<h3 id="authorization_2">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getserverlogfiledownloadconfig"><strong>getServerLogFileDownloadConfig</strong></h1>
+<blockquote>
+<p>\Model\ServerLogFileDownloadConfig getServerLogFileDownloadConfig($serverName, $logName)</p>
+</blockquote>
+<p>Retrieves the Server Log file for the specified log name, zipped</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_3">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$logName = &quot;logName_example&quot;; // string | The name of the log
+
+try {
+    $result = $api_instance-&gt;getServerLogFileDownloadConfig($serverName, $logName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServerLogFileDownloadConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>logName</strong></td>
+<td><strong>string</strong></td>
+<td>The name of the log</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_3">Return type</h3>
+<p><a href="../../Model/ServerLogFileDownloadConfig/"><strong>\Model\ServerLogFileDownloadConfig</strong></a></p>
+<h3 id="authorization_3">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getserverlogfilesconfig"><strong>getServerLogFilesConfig</strong></h1>
+<blockquote>
+<p>\Model\ServerLogFilesConfig getServerLogFilesConfig($serverName, $order)</p>
+</blockquote>
+<p>Retrieves the list of server log files</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_4">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$order = &quot;newestFirst&quot;; // string | The order of files in serverLogs list
+
+try {
+    $result = $api_instance-&gt;getServerLogFilesConfig($serverName, $order);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServerLogFilesConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>order</strong></td>
+<td><strong>string</strong></td>
+<td>The order of files in serverLogs list</td>
+<td>[optional] [default to newestFirst]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_4">Return type</h3>
+<p><a href="../../Model/ServerLogFilesConfig/"><strong>\Model\ServerLogFilesConfig</strong></a></p>
+<h3 id="authorization_4">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_4">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getserverlogtypesconfig"><strong>getServerLogTypesConfig</strong></h1>
+<blockquote>
+<p>\Model\ServerLogTypesConfig getServerLogTypesConfig($serverName)</p>
+</blockquote>
+<p>Retrieves the list of available server Log Types</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_5">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getServerLogTypesConfig($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServerLogTypesConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_5">Return type</h3>
+<p><a href="../../Model/ServerLogTypesConfig/"><strong>\Model\ServerLogTypesConfig</strong></a></p>
+<h3 id="authorization_5">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_5">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getserverlogsconfig"><strong>getServerLogsConfig</strong></h1>
+<blockquote>
+<p>\Model\ServerLogsConfig getServerLogsConfig($serverName, $logType, $lineCount, $startOffset, $filter, $search, $regexSearch, $head, $tail, $startDate, $endDate)</p>
+</blockquote>
+<p>Retrieves the contents of multiple Server Logs with the specified type in the log name</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_6">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$logType = &quot;logType_example&quot;; // string | The type of the log
+$lineCount = &quot;100&quot;; // string | The number of log lines requested, where a postive number indicates log lines after startOffset and a negative number indicate log lines before startOffset
+$startOffset = &quot;startOffset_example&quot;; // string | The byte offset in the file at which to begin getting log lines
+$filter = &quot;filter_example&quot;; // string | A string containing a list of predefined search filters separated by | where valid strings are noDebug,noInfo,noWarn,noError,noHeader,noColumnHeadings
+$search = &quot;search_example&quot;; // string | A string containing a literal string on which to filter or a regex
+$regexSearch = &quot;false&quot;; // string | Indicates if the 'search' parameter is a regex or a literal string
+$head = &quot;head_example&quot;; // string | Returns the first x lines from the requested log file, the overrides the startoffset and linecount values
+$tail = &quot;tail_example&quot;; // string | Returns the last x lines from the requested log file, the overrides the startoffset and linecount values
+$startDate = &quot;startDate_example&quot;; // string | The start date to filter on (UTC milliseconds)
+$endDate = &quot;endDate_example&quot;; // string | The end date to filter on (UTC milliseconds)
+
+try {
+    $result = $api_instance-&gt;getServerLogsConfig($serverName, $logType, $lineCount, $startOffset, $filter, $search, $regexSearch, $head, $tail, $startDate, $endDate);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServerLogsConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_6">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>logType</strong></td>
+<td><strong>string</strong></td>
+<td>The type of the log</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>lineCount</strong></td>
+<td><strong>string</strong></td>
+<td>The number of log lines requested, where a postive number indicates log lines after startOffset and a negative number indicate log lines before startOffset</td>
+<td>[optional] [default to 100]</td>
+</tr>
+<tr>
+<td><strong>startOffset</strong></td>
+<td><strong>string</strong></td>
+<td>The byte offset in the file at which to begin getting log lines</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>filter</strong></td>
+<td><strong>string</strong></td>
+<td>A string containing a list of predefined search filters separated by</td>
+<td>where valid strings are noDebug,noInfo,noWarn,noError,noHeader,noColumnHeadings</td>
+</tr>
+<tr>
+<td><strong>search</strong></td>
+<td><strong>string</strong></td>
+<td>A string containing a literal string on which to filter or a regex</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>regexSearch</strong></td>
+<td><strong>string</strong></td>
+<td>Indicates if the &#39;search&#39; parameter is a regex or a literal string</td>
+<td>[optional] [default to false]</td>
+</tr>
+<tr>
+<td><strong>head</strong></td>
+<td><strong>string</strong></td>
+<td>Returns the first x lines from the requested log file, the overrides the startoffset and linecount values</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>tail</strong></td>
+<td><strong>string</strong></td>
+<td>Returns the last x lines from the requested log file, the overrides the startoffset and linecount values</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>startDate</strong></td>
+<td><strong>string</strong></td>
+<td>The start date to filter on (UTC milliseconds)</td>
+<td>[optional]</td>
+</tr>
+<tr>
+<td><strong>endDate</strong></td>
+<td><strong>string</strong></td>
+<td>The end date to filter on (UTC milliseconds)</td>
+<td>[optional]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_6">Return type</h3>
+<p><a href="../../Model/ServerLogsConfig/"><strong>\Model\ServerLogsConfig</strong></a></p>
+<h3 id="authorization_6">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_6">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getserversconfig"><strong>getServersConfig</strong></h1>
+<blockquote>
+<p>\Model\ServersConfig getServersConfig()</p>
+</blockquote>
+<p>Retrieves the list of Servers</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_7">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+
+try {
+    $result = $api_instance-&gt;getServersConfig();
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getServersConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_7">Parameters</h3>
+<p>This endpoint does not need any parameter.</p>
+<h3 id="return-type_7">Return type</h3>
+<p><a href="../../Model/ServersConfig/"><strong>\Model\ServersConfig</strong></a></p>
+<h3 id="authorization_7">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_7">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getsourcedrivernameslist"><strong>getSourceDriverNamesList</strong></h1>
+<blockquote>
+<p>\Model\SourceDriverNamesList getSourceDriverNamesList($serverName)</p>
+</blockquote>
+<p>Get the list of source control drivers</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_8">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getSourceDriverNamesList($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;getSourceDriverNamesList: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_8">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_8">Return type</h3>
+<p><a href="../../Model/SourceDriverNamesList/"><strong>\Model\SourceDriverNamesList</strong></a></p>
+<h3 id="authorization_8">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_8">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putserveraction"><strong>putServerAction</strong></h1>
+<blockquote>
+<p>putServerAction($serverName, $action)</p>
+</blockquote>
+<p>Tells the Server to perform an action</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_9">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$action = &quot;action_example&quot;; // string | The action which should be performed by the server
+
+try {
+    $api_instance-&gt;putServerAction($serverName, $action);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;putServerAction: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_9">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>action</strong></td>
+<td><strong>string</strong></td>
+<td>The action which should be performed by the server</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_9">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_9">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_9">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putserverconfig"><strong>putServerConfig</strong></h1>
+<blockquote>
+<p>putServerConfig($serverName, $body)</p>
+</blockquote>
+<p>Updates the Server configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_10">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\ServerConfig(); // \Model\ServerConfig | 
+
+try {
+    $api_instance-&gt;putServerConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;putServerConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_10">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\ServerConfig.md"><strong>\Model\ServerConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_10">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_10">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_10">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putserverconfigadv"><strong>putServerConfigAdv</strong></h1>
+<blockquote>
+<p>putServerConfigAdv($serverName, $body)</p>
+</blockquote>
+<p>Updates the advanced Server configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_11">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\ServerConfigAdv(); // \Model\ServerConfigAdv | 
+
+try {
+    $api_instance-&gt;putServerConfigAdv($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversApi-&gt;putServerConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_11">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\ServerConfigAdv.md"><strong>\Model\ServerConfigAdv</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_11">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_11">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_11">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

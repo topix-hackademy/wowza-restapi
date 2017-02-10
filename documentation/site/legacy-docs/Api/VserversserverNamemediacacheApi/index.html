@@ -1,0 +1,4293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="TOP-IX HackAdemy">
+        <link rel="canonical" href="http://top-ix.org/legacy-docs/Api/VserversserverNamemediacacheApi/">
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>VserversserverNamemediacacheApi - Wowza-Rest Api Documentation</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Wowza-Rest Api Documentation</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legacy-Docs Api <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../RestinfoApi/">RestinfoApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VmachinemonitoringcurrentApi/">VmachinemonitoringcurrentApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VmachinemonitoringhistoricApi/">VmachinemonitoringhistoricApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversApi/">VserversApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamelicensesApi/">VserversserverNamelicensesApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamelistenersApi/">VserversserverNamelistenersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamelogjApi/">VserversserverNamelogjApi</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">VserversserverNamemediacacheApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamemediacastersApi/">VserversserverNamemediacastersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamemonitoringApi/">VserversserverNamemonitoringApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamepublishersApi/">VserversserverNamepublishersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamestatusApi/">VserversserverNamestatusApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNametranscoderApi/">VserversserverNametranscoderApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNametuneApi/">VserversserverNametuneApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNameusersApi/">VserversserverNameusersApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamevhostsApi/">VserversserverNamevhostsApi</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../VserversserverNamevhostsvhostNameapplicationsApi/">VserversserverNamevhostsvhostNameapplicationsApi</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legacy-Docs Model <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../Model/StartupStreamsConfig/">StartupStreamsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamConfigurationConfig/">StreamConfigurationConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAction/">StreamFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAppAction/">StreamFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAppConfig/">StreamFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileAppConfigAdv/">StreamFileAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileConfig/">StreamFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFileConfigAdv/">StreamFileConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFilesAppConfig/">StreamFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamFilesConfig/">StreamFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamGroupAction/">StreamGroupAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamGroupConfig/">StreamGroupConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamGroupsConfig/">StreamGroupsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamRecorderAction/">StreamRecorderAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamRecorderConfig/">StreamRecorderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StreamRecordersConfig/">StreamRecordersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderAppConfig/">TranscoderAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderAppConfigAdv/">TranscoderAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderConfig/">TranscoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeAppConfig/">TranscoderEncodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeAppConfigAdv/">TranscoderEncodeAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeConfig/">TranscoderEncodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodeConfigAdv/">TranscoderEncodeConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodesAppConfig/">TranscoderEncodesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderEncodesConfig/">TranscoderEncodesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderMemberConfig/">TranscoderMemberConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayDecodeAppConfig/">TranscoderOverlayDecodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayDecodeConfig/">TranscoderOverlayDecodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayEncodeAppConfig/">TranscoderOverlayEncodeAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderOverlayEncodeConfig/">TranscoderOverlayEncodeConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupAppConfig/">TranscoderStreamNameGroupAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupConfig/">TranscoderStreamNameGroupConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupsAppConfig/">TranscoderStreamNameGroupsAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderStreamNameGroupsConfig/">TranscoderStreamNameGroupsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAction/">TranscoderTemplateAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAppAction/">TranscoderTemplateAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAppConfig/">TranscoderTemplateAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateAppConfigAdv/">TranscoderTemplateAppConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateConfig/">TranscoderTemplateConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplateConfigAdv/">TranscoderTemplateConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplatesAppConfig/">TranscoderTemplatesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/TranscoderTemplatesConfig/">TranscoderTemplatesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/UserConfig/">UserConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/UsersConfig/">UsersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostAction/">VHostAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostConfig/">VHostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostConfigAdv/">VHostConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostShortObject/">VHostShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostTuneConfig/">VHostTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VHostsConfig/">VHostsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VerimatrixStreamMapConfig/">VerimatrixStreamMapConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VerimatrixStreamMapsConfig/">VerimatrixStreamMapsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/VideoSettings/">VideoSettings</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/WMSLoggerConfig/">WMSLoggerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/AdvancedSetting/">AdvancedSetting</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/AppShortObject/">AppShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationAction/">ApplicationAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationConfig/">ApplicationConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationConfigAdv/">ApplicationConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ApplicationsConfig/">ApplicationsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/BuyDRMStreamMapConfig/">BuyDRMStreamMapConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/BuyDRMStreamMapsConfig/">BuyDRMStreamMapsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentApplicationStatistics/">CurrentApplicationStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentIncomingStreamStatistics/">CurrentIncomingStreamStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentMachineStatistics/">CurrentMachineStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/CurrentVHostStatistics/">CurrentVHostStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DRMConfig/">DRMConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DRMConfigAdv/">DRMConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DVRConfig/">DVRConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DVRConfigAdv/">DVRConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DefaultStreamRecorderConfig/">DefaultStreamRecorderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStore/">DvrRESTConverterStore</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStoreAction/">DvrRESTConverterStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStores/">DvrRESTConverterStores</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/DvrRESTConverterStoresAction/">DvrRESTConverterStoresAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricApplicationStatistics/">HistoricApplicationStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricMachineStatistics/">HistoricMachineStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricServerStatistics/">HistoricServerStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HistoricVHostStatistics/">HistoricVHostStatistics</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostPortConfig/">HostPortConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostPortConfigAdv/">HostPortConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostPortsConfig/">HostPortsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/HostportsTuneConfig/">HostportsTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/IncomingStreamAction/">IncomingStreamAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/IncomingStreamConfig/">IncomingStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/InstanceAction/">InstanceAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/InstanceConfig/">InstanceConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/InstancesConfig/">InstancesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Integer/">Integer</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/LiveEncoderConfig/">LiveEncoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Log4jAction/">Log4jAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Log4js/">Log4js</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Log4jsAction/">Log4jsAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Long/">Long</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheApplicationStoreAction/">MediaCacheApplicationStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheConfig/">MediaCacheConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheConfig3/">MediaCacheConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheConfigAdv/">MediaCacheConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfig/">MediaCacheSourceConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfig3/">MediaCacheSourceConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfigAdv/">MediaCacheSourceConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourceConfigAdv3/">MediaCacheSourceConfigAdv3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourcesConfig/">MediaCacheSourcesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheSourcesConfig3/">MediaCacheSourcesConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreAction/">MediaCacheStoreAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreConfig/">MediaCacheStoreConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreConfig3/">MediaCacheStoreConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreConfigAdv/">MediaCacheStoreConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoreList/">MediaCacheStoreList</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoresConfig/">MediaCacheStoresConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCacheStoresConfig3/">MediaCacheStoresConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCasterConfig/">MediaCasterConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MediaCastersConfig/">MediaCastersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ModuleConfig/">ModuleConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ModulesConfig/">ModulesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/MonitoringConfig/">MonitoringConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/OutgoingStreamConfig/">OutgoingStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/Output/">Output</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherAppConfig/">PublisherAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherConfig/">PublisherConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherConfig3/">PublisherConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublisherVhostConfig/">PublisherVhostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersAppConfig/">PublishersAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersConfig/">PublishersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersConfig3/">PublishersConfig3</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PublishersVhostConfig/">PublishersVhostConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PushPublishStreamAppAction/">PushPublishStreamAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PushPublishStreamAppConfig/">PushPublishStreamAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/PushPublishStreamsAppConfig/">PushPublishStreamsAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/RESTInfoConfig/">RESTInfoConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/RTMP/">RTMP</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileAction/">SDPFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileAppAction/">SDPFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileAppConfig/">SDPFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFileConfig/">SDPFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFilesAppConfig/">SDPFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SDPFilesConfig/">SDPFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileAction/">SMILFileAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileAppAction/">SMILFileAppAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileAppConfig/">SMILFileAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileConfig/">SMILFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFileStreamConfig/">SMILFileStreamConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFilesAppConfig/">SMILFilesAppConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SMILFilesConfig/">SMILFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SSLConfig/">SSLConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SecurityConfig/">SecurityConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerAction/">ServerAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerConfig/">ServerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerConfigAdv/">ServerConfigAdv</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLicensesConfig/">ServerLicensesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerListenerConfig/">ServerListenerConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerListenersConfig/">ServerListenersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogFileConfig/">ServerLogFileConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogFileDownloadConfig/">ServerLogFileDownloadConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogFilesConfig/">ServerLogFilesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogShortObject/">ServerLogShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogTypesConfig/">ServerLogTypesConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerLogsConfig/">ServerLogsConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerStatusConfig/">ServerStatusConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServerTuneConfig/">ServerTuneConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ServersConfig/">ServersConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ShortObject/">ShortObject</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/ShortUrlEncoderConfig/">ShortUrlEncoderConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SourceControlAction/">SourceControlAction</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SourceControlConfig/">SourceControlConfig</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/SourceDriverNamesList/">SourceDriverNamesList</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Model/StartupStreamConfig/">StartupStreamConfig</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../VserversserverNamelogjApi/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../VserversserverNamemediacastersApi/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/topix-hackademy/contact-tools">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#wowzaapivserversservernamemediacacheapi">WowzaApi\VserversserverNamemediacacheApi</a></li>
+        
+    
+        <li class="main "><a href="#deletemediacachesourceconfig">deleteMediaCacheSourceConfig</a></li>
+        
+            <li><a href="#example">Example</a></li>
+        
+            <li><a href="#parameters">Parameters</a></li>
+        
+            <li><a href="#return-type">Return type</a></li>
+        
+            <li><a href="#authorization">Authorization</a></li>
+        
+            <li><a href="#http-request-headers">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#deletemediacachesourceconfig3">deleteMediaCacheSourceConfig3</a></li>
+        
+            <li><a href="#example_1">Example</a></li>
+        
+            <li><a href="#parameters_1">Parameters</a></li>
+        
+            <li><a href="#return-type_1">Return type</a></li>
+        
+            <li><a href="#authorization_1">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_1">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#deletemediacachestoreconfig">deleteMediaCacheStoreConfig</a></li>
+        
+            <li><a href="#example_2">Example</a></li>
+        
+            <li><a href="#parameters_2">Parameters</a></li>
+        
+            <li><a href="#return-type_2">Return type</a></li>
+        
+            <li><a href="#authorization_2">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_2">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#deletemediacachestoreconfig3">deleteMediaCacheStoreConfig3</a></li>
+        
+            <li><a href="#example_3">Example</a></li>
+        
+            <li><a href="#parameters_3">Parameters</a></li>
+        
+            <li><a href="#return-type_3">Return type</a></li>
+        
+            <li><a href="#authorization_3">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_3">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacacheconfig">getMediaCacheConfig</a></li>
+        
+            <li><a href="#example_4">Example</a></li>
+        
+            <li><a href="#parameters_4">Parameters</a></li>
+        
+            <li><a href="#return-type_4">Return type</a></li>
+        
+            <li><a href="#authorization_4">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_4">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacacheconfig3">getMediaCacheConfig3</a></li>
+        
+            <li><a href="#example_5">Example</a></li>
+        
+            <li><a href="#parameters_5">Parameters</a></li>
+        
+            <li><a href="#return-type_5">Return type</a></li>
+        
+            <li><a href="#authorization_5">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_5">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacacheconfigadv">getMediaCacheConfigAdv</a></li>
+        
+            <li><a href="#example_6">Example</a></li>
+        
+            <li><a href="#parameters_6">Parameters</a></li>
+        
+            <li><a href="#return-type_6">Return type</a></li>
+        
+            <li><a href="#authorization_6">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_6">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachesourceconfig">getMediaCacheSourceConfig</a></li>
+        
+            <li><a href="#example_7">Example</a></li>
+        
+            <li><a href="#parameters_7">Parameters</a></li>
+        
+            <li><a href="#return-type_7">Return type</a></li>
+        
+            <li><a href="#authorization_7">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_7">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachesourceconfig3">getMediaCacheSourceConfig3</a></li>
+        
+            <li><a href="#example_8">Example</a></li>
+        
+            <li><a href="#parameters_8">Parameters</a></li>
+        
+            <li><a href="#return-type_8">Return type</a></li>
+        
+            <li><a href="#authorization_8">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_8">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachesourceconfigadv">getMediaCacheSourceConfigAdv</a></li>
+        
+            <li><a href="#example_9">Example</a></li>
+        
+            <li><a href="#parameters_9">Parameters</a></li>
+        
+            <li><a href="#return-type_9">Return type</a></li>
+        
+            <li><a href="#authorization_9">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_9">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachesourceconfigadv3">getMediaCacheSourceConfigAdv3</a></li>
+        
+            <li><a href="#example_10">Example</a></li>
+        
+            <li><a href="#parameters_10">Parameters</a></li>
+        
+            <li><a href="#return-type_10">Return type</a></li>
+        
+            <li><a href="#authorization_10">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_10">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachesourcesconfig">getMediaCacheSourcesConfig</a></li>
+        
+            <li><a href="#example_11">Example</a></li>
+        
+            <li><a href="#parameters_11">Parameters</a></li>
+        
+            <li><a href="#return-type_11">Return type</a></li>
+        
+            <li><a href="#authorization_11">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_11">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachesourcesconfig3">getMediaCacheSourcesConfig3</a></li>
+        
+            <li><a href="#example_12">Example</a></li>
+        
+            <li><a href="#parameters_12">Parameters</a></li>
+        
+            <li><a href="#return-type_12">Return type</a></li>
+        
+            <li><a href="#authorization_12">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_12">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachestoreconfig">getMediaCacheStoreConfig</a></li>
+        
+            <li><a href="#example_13">Example</a></li>
+        
+            <li><a href="#parameters_13">Parameters</a></li>
+        
+            <li><a href="#return-type_13">Return type</a></li>
+        
+            <li><a href="#authorization_13">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_13">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachestoreconfig3">getMediaCacheStoreConfig3</a></li>
+        
+            <li><a href="#example_14">Example</a></li>
+        
+            <li><a href="#parameters_14">Parameters</a></li>
+        
+            <li><a href="#return-type_14">Return type</a></li>
+        
+            <li><a href="#authorization_14">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_14">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachestoreconfigadv">getMediaCacheStoreConfigAdv</a></li>
+        
+            <li><a href="#example_15">Example</a></li>
+        
+            <li><a href="#parameters_15">Parameters</a></li>
+        
+            <li><a href="#return-type_15">Return type</a></li>
+        
+            <li><a href="#authorization_15">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_15">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachestoresconfig">getMediaCacheStoresConfig</a></li>
+        
+            <li><a href="#example_16">Example</a></li>
+        
+            <li><a href="#parameters_16">Parameters</a></li>
+        
+            <li><a href="#return-type_16">Return type</a></li>
+        
+            <li><a href="#authorization_16">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_16">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#getmediacachestoresconfig3">getMediaCacheStoresConfig3</a></li>
+        
+            <li><a href="#example_17">Example</a></li>
+        
+            <li><a href="#parameters_17">Parameters</a></li>
+        
+            <li><a href="#return-type_17">Return type</a></li>
+        
+            <li><a href="#authorization_17">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_17">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacacheconfigadv">postMediaCacheConfigAdv</a></li>
+        
+            <li><a href="#example_18">Example</a></li>
+        
+            <li><a href="#parameters_18">Parameters</a></li>
+        
+            <li><a href="#return-type_18">Return type</a></li>
+        
+            <li><a href="#authorization_18">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_18">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachesourceconfig">postMediaCacheSourceConfig</a></li>
+        
+            <li><a href="#example_19">Example</a></li>
+        
+            <li><a href="#parameters_19">Parameters</a></li>
+        
+            <li><a href="#return-type_19">Return type</a></li>
+        
+            <li><a href="#authorization_19">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_19">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachesourceconfig3">postMediaCacheSourceConfig3</a></li>
+        
+            <li><a href="#example_20">Example</a></li>
+        
+            <li><a href="#parameters_20">Parameters</a></li>
+        
+            <li><a href="#return-type_20">Return type</a></li>
+        
+            <li><a href="#authorization_20">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_20">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachesourceconfigadv">postMediaCacheSourceConfigAdv</a></li>
+        
+            <li><a href="#example_21">Example</a></li>
+        
+            <li><a href="#parameters_21">Parameters</a></li>
+        
+            <li><a href="#return-type_21">Return type</a></li>
+        
+            <li><a href="#authorization_21">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_21">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachesourceconfigadv3">postMediaCacheSourceConfigAdv3</a></li>
+        
+            <li><a href="#example_22">Example</a></li>
+        
+            <li><a href="#parameters_22">Parameters</a></li>
+        
+            <li><a href="#return-type_22">Return type</a></li>
+        
+            <li><a href="#authorization_22">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_22">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachesourcesconfig">postMediaCacheSourcesConfig</a></li>
+        
+            <li><a href="#example_23">Example</a></li>
+        
+            <li><a href="#parameters_23">Parameters</a></li>
+        
+            <li><a href="#return-type_23">Return type</a></li>
+        
+            <li><a href="#authorization_23">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_23">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachesourcesconfig3">postMediaCacheSourcesConfig3</a></li>
+        
+            <li><a href="#example_24">Example</a></li>
+        
+            <li><a href="#parameters_24">Parameters</a></li>
+        
+            <li><a href="#return-type_24">Return type</a></li>
+        
+            <li><a href="#authorization_24">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_24">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachestoreconfig">postMediaCacheStoreConfig</a></li>
+        
+            <li><a href="#example_25">Example</a></li>
+        
+            <li><a href="#parameters_25">Parameters</a></li>
+        
+            <li><a href="#return-type_25">Return type</a></li>
+        
+            <li><a href="#authorization_25">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_25">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachestoreconfig3">postMediaCacheStoreConfig3</a></li>
+        
+            <li><a href="#example_26">Example</a></li>
+        
+            <li><a href="#parameters_26">Parameters</a></li>
+        
+            <li><a href="#return-type_26">Return type</a></li>
+        
+            <li><a href="#authorization_26">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_26">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachestoreconfigadv">postMediaCacheStoreConfigAdv</a></li>
+        
+            <li><a href="#example_27">Example</a></li>
+        
+            <li><a href="#parameters_27">Parameters</a></li>
+        
+            <li><a href="#return-type_27">Return type</a></li>
+        
+            <li><a href="#authorization_27">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_27">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachestoresconfig">postMediaCacheStoresConfig</a></li>
+        
+            <li><a href="#example_28">Example</a></li>
+        
+            <li><a href="#parameters_28">Parameters</a></li>
+        
+            <li><a href="#return-type_28">Return type</a></li>
+        
+            <li><a href="#authorization_28">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_28">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#postmediacachestoresconfig3">postMediaCacheStoresConfig3</a></li>
+        
+            <li><a href="#example_29">Example</a></li>
+        
+            <li><a href="#parameters_29">Parameters</a></li>
+        
+            <li><a href="#return-type_29">Return type</a></li>
+        
+            <li><a href="#authorization_29">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_29">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacacheconfig">putMediaCacheConfig</a></li>
+        
+            <li><a href="#example_30">Example</a></li>
+        
+            <li><a href="#parameters_30">Parameters</a></li>
+        
+            <li><a href="#return-type_30">Return type</a></li>
+        
+            <li><a href="#authorization_30">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_30">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacacheconfig3">putMediaCacheConfig3</a></li>
+        
+            <li><a href="#example_31">Example</a></li>
+        
+            <li><a href="#parameters_31">Parameters</a></li>
+        
+            <li><a href="#return-type_31">Return type</a></li>
+        
+            <li><a href="#authorization_31">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_31">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacacheconfigadv">putMediaCacheConfigAdv</a></li>
+        
+            <li><a href="#example_32">Example</a></li>
+        
+            <li><a href="#parameters_32">Parameters</a></li>
+        
+            <li><a href="#return-type_32">Return type</a></li>
+        
+            <li><a href="#authorization_32">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_32">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacachesourceconfig">putMediaCacheSourceConfig</a></li>
+        
+            <li><a href="#example_33">Example</a></li>
+        
+            <li><a href="#parameters_33">Parameters</a></li>
+        
+            <li><a href="#return-type_33">Return type</a></li>
+        
+            <li><a href="#authorization_33">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_33">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacachesourceconfig3">putMediaCacheSourceConfig3</a></li>
+        
+            <li><a href="#example_34">Example</a></li>
+        
+            <li><a href="#parameters_34">Parameters</a></li>
+        
+            <li><a href="#return-type_34">Return type</a></li>
+        
+            <li><a href="#authorization_34">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_34">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacachesourceconfigadv">putMediaCacheSourceConfigAdv</a></li>
+        
+            <li><a href="#example_35">Example</a></li>
+        
+            <li><a href="#parameters_35">Parameters</a></li>
+        
+            <li><a href="#return-type_35">Return type</a></li>
+        
+            <li><a href="#authorization_35">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_35">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacachesourceconfigadv3">putMediaCacheSourceConfigAdv3</a></li>
+        
+            <li><a href="#example_36">Example</a></li>
+        
+            <li><a href="#parameters_36">Parameters</a></li>
+        
+            <li><a href="#return-type_36">Return type</a></li>
+        
+            <li><a href="#authorization_36">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_36">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacachestoreconfig">putMediaCacheStoreConfig</a></li>
+        
+            <li><a href="#example_37">Example</a></li>
+        
+            <li><a href="#parameters_37">Parameters</a></li>
+        
+            <li><a href="#return-type_37">Return type</a></li>
+        
+            <li><a href="#authorization_37">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_37">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacachestoreconfig3">putMediaCacheStoreConfig3</a></li>
+        
+            <li><a href="#example_38">Example</a></li>
+        
+            <li><a href="#parameters_38">Parameters</a></li>
+        
+            <li><a href="#return-type_38">Return type</a></li>
+        
+            <li><a href="#authorization_38">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_38">HTTP request headers</a></li>
+        
+    
+        <li class="main "><a href="#putmediacachestoreconfigadv">putMediaCacheStoreConfigAdv</a></li>
+        
+            <li><a href="#example_39">Example</a></li>
+        
+            <li><a href="#parameters_39">Parameters</a></li>
+        
+            <li><a href="#return-type_39">Return type</a></li>
+        
+            <li><a href="#authorization_39">Authorization</a></li>
+        
+            <li><a href="#http-request-headers_39">HTTP request headers</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="wowzaapivserversservernamemediacacheapi">WowzaApi\VserversserverNamemediacacheApi</h1>
+<p>All URIs are relative to <em>http://localhost:8087/</em></p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>HTTP request</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="./#deleteMediaCacheSourceConfig"><strong>deleteMediaCacheSourceConfig</strong></a></td>
+<td><strong>DELETE</strong> /v2/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Deletes the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#deleteMediaCacheSourceConfig3"><strong>deleteMediaCacheSourceConfig3</strong></a></td>
+<td><strong>DELETE</strong> /v3/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Deletes the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#deleteMediaCacheStoreConfig"><strong>deleteMediaCacheStoreConfig</strong></a></td>
+<td><strong>DELETE</strong> /v2/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Deletes the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#deleteMediaCacheStoreConfig3"><strong>deleteMediaCacheStoreConfig3</strong></a></td>
+<td><strong>DELETE</strong> /v3/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Deletes the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheConfig"><strong>getMediaCacheConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache</td>
+<td>Retrieves the server MediaCache configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheConfig3"><strong>getMediaCacheConfig3</strong></a></td>
+<td><strong>GET</strong> /v3/servers/{serverName}/mediacache</td>
+<td>Retrieves the server MediaCache configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheConfigAdv"><strong>getMediaCacheConfigAdv</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache/adv</td>
+<td>Retrieves the advanced MediaCache configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheSourceConfig"><strong>getMediaCacheSourceConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Retrieves the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheSourceConfig3"><strong>getMediaCacheSourceConfig3</strong></a></td>
+<td><strong>GET</strong> /v3/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Retrieves the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheSourceConfigAdv"><strong>getMediaCacheSourceConfigAdv</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache/sources/{sourceName}/adv</td>
+<td>Retrieves the specified advanced MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheSourceConfigAdv3"><strong>getMediaCacheSourceConfigAdv3</strong></a></td>
+<td><strong>GET</strong> /v3/servers/{serverName}/mediacache/sources/{sourceName}/adv</td>
+<td>Retrieves the specified advanced MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheSourcesConfig"><strong>getMediaCacheSourcesConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache/sources</td>
+<td>Retrieves the list of MediaCache Sources</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheSourcesConfig3"><strong>getMediaCacheSourcesConfig3</strong></a></td>
+<td><strong>GET</strong> /v3/servers/{serverName}/mediacache/sources</td>
+<td>Retrieves the list of MediaCache Sources</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheStoreConfig"><strong>getMediaCacheStoreConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Retrieves the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheStoreConfig3"><strong>getMediaCacheStoreConfig3</strong></a></td>
+<td><strong>GET</strong> /v3/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Retrieves the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheStoreConfigAdv"><strong>getMediaCacheStoreConfigAdv</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache/stores/{storeName}/adv</td>
+<td>Retrieves the specified advanced MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheStoresConfig"><strong>getMediaCacheStoresConfig</strong></a></td>
+<td><strong>GET</strong> /v2/servers/{serverName}/mediacache/stores</td>
+<td>Retrieves the list of MediaCache Stores</td>
+</tr>
+<tr>
+<td><a href="./#getMediaCacheStoresConfig3"><strong>getMediaCacheStoresConfig3</strong></a></td>
+<td><strong>GET</strong> /v3/servers/{serverName}/mediacache/stores</td>
+<td>Retrieves the list of MediaCache Stores</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheConfigAdv"><strong>postMediaCacheConfigAdv</strong></a></td>
+<td><strong>POST</strong> /v2/servers/{serverName}/mediacache/adv</td>
+<td>Adds an advanced MediaCache configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheSourceConfig"><strong>postMediaCacheSourceConfig</strong></a></td>
+<td><strong>POST</strong> /v2/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Adds the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheSourceConfig3"><strong>postMediaCacheSourceConfig3</strong></a></td>
+<td><strong>POST</strong> /v3/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Adds the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheSourceConfigAdv"><strong>postMediaCacheSourceConfigAdv</strong></a></td>
+<td><strong>POST</strong> /v2/servers/{serverName}/mediacache/sources/{sourceName}/adv</td>
+<td>Adds the specified advanced MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheSourceConfigAdv3"><strong>postMediaCacheSourceConfigAdv3</strong></a></td>
+<td><strong>POST</strong> /v3/servers/{serverName}/mediacache/sources/{sourceName}/adv</td>
+<td>Adds the specified advanced MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheSourcesConfig"><strong>postMediaCacheSourcesConfig</strong></a></td>
+<td><strong>POST</strong> /v2/servers/{serverName}/mediacache/sources</td>
+<td>Adds the specified MediaCache Source to the list</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheSourcesConfig3"><strong>postMediaCacheSourcesConfig3</strong></a></td>
+<td><strong>POST</strong> /v3/servers/{serverName}/mediacache/sources</td>
+<td>Adds the specified MediaCache Source to the list</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheStoreConfig"><strong>postMediaCacheStoreConfig</strong></a></td>
+<td><strong>POST</strong> /v2/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Adds the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheStoreConfig3"><strong>postMediaCacheStoreConfig3</strong></a></td>
+<td><strong>POST</strong> /v3/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Adds the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheStoreConfigAdv"><strong>postMediaCacheStoreConfigAdv</strong></a></td>
+<td><strong>POST</strong> /v2/servers/{serverName}/mediacache/stores/{storeName}/adv</td>
+<td>Adds the specified advanced MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheStoresConfig"><strong>postMediaCacheStoresConfig</strong></a></td>
+<td><strong>POST</strong> /v2/servers/{serverName}/mediacache/stores</td>
+<td>Adds the specified MediaCache Store to the list</td>
+</tr>
+<tr>
+<td><a href="./#postMediaCacheStoresConfig3"><strong>postMediaCacheStoresConfig3</strong></a></td>
+<td><strong>POST</strong> /v3/servers/{serverName}/mediacache/stores</td>
+<td>Adds the specified MediaCache Store to the list</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheConfig"><strong>putMediaCacheConfig</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/mediacache</td>
+<td>Updates the server MediaCache configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheConfig3"><strong>putMediaCacheConfig3</strong></a></td>
+<td><strong>PUT</strong> /v3/servers/{serverName}/mediacache</td>
+<td>Updates the server MediaCache configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheConfigAdv"><strong>putMediaCacheConfigAdv</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/mediacache/adv</td>
+<td>Updates the advanced MediaCache configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheSourceConfig"><strong>putMediaCacheSourceConfig</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Updates the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheSourceConfig3"><strong>putMediaCacheSourceConfig3</strong></a></td>
+<td><strong>PUT</strong> /v3/servers/{serverName}/mediacache/sources/{sourceName}</td>
+<td>Updates the specified MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheSourceConfigAdv"><strong>putMediaCacheSourceConfigAdv</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/mediacache/sources/{sourceName}/adv</td>
+<td>Updates the specified advanced MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheSourceConfigAdv3"><strong>putMediaCacheSourceConfigAdv3</strong></a></td>
+<td><strong>PUT</strong> /v3/servers/{serverName}/mediacache/sources/{sourceName}/adv</td>
+<td>Updates the specified advanced MediaCache Source configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheStoreConfig"><strong>putMediaCacheStoreConfig</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Updates the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheStoreConfig3"><strong>putMediaCacheStoreConfig3</strong></a></td>
+<td><strong>PUT</strong> /v3/servers/{serverName}/mediacache/stores/{storeName}</td>
+<td>Updates the specified MediaCache Store configuration</td>
+</tr>
+<tr>
+<td><a href="./#putMediaCacheStoreConfigAdv"><strong>putMediaCacheStoreConfigAdv</strong></a></td>
+<td><strong>PUT</strong> /v2/servers/{serverName}/mediacache/stores/{storeName}/adv</td>
+<td>Updates the specified advanced MediaCache Store configuration</td>
+</tr>
+</tbody>
+</table>
+<h1 id="deletemediacachesourceconfig"><strong>deleteMediaCacheSourceConfig</strong></h1>
+<blockquote>
+<p>deleteMediaCacheSourceConfig($serverName)</p>
+</blockquote>
+<p>Deletes the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $api_instance-&gt;deleteMediaCacheSourceConfig($serverName);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;deleteMediaCacheSourceConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="deletemediacachesourceconfig3"><strong>deleteMediaCacheSourceConfig3</strong></h1>
+<blockquote>
+<p>deleteMediaCacheSourceConfig3($serverName, $sourceName)</p>
+</blockquote>
+<p>Deletes the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_1">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+
+try {
+    $api_instance-&gt;deleteMediaCacheSourceConfig3($serverName, $sourceName);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;deleteMediaCacheSourceConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_1">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_1">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_1">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_1">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="deletemediacachestoreconfig"><strong>deleteMediaCacheStoreConfig</strong></h1>
+<blockquote>
+<p>deleteMediaCacheStoreConfig($serverName)</p>
+</blockquote>
+<p>Deletes the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_2">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $api_instance-&gt;deleteMediaCacheStoreConfig($serverName);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;deleteMediaCacheStoreConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_2">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_2">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_2">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_2">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="deletemediacachestoreconfig3"><strong>deleteMediaCacheStoreConfig3</strong></h1>
+<blockquote>
+<p>deleteMediaCacheStoreConfig3($serverName, $storeName)</p>
+</blockquote>
+<p>Deletes the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_3">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$storeName = &quot;storeName_example&quot;; // string | 
+
+try {
+    $api_instance-&gt;deleteMediaCacheStoreConfig3($serverName, $storeName);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;deleteMediaCacheStoreConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_3">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>storeName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_3">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_3">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_3">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacacheconfig"><strong>getMediaCacheConfig</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheConfig getMediaCacheConfig($serverName)</p>
+</blockquote>
+<p>Retrieves the server MediaCache configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_4">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheConfig($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_4">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_4">Return type</h3>
+<p><a href="../../Model/MediaCacheConfig/"><strong>\Model\MediaCacheConfig</strong></a></p>
+<h3 id="authorization_4">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_4">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacacheconfig3"><strong>getMediaCacheConfig3</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheConfig3 getMediaCacheConfig3($serverName)</p>
+</blockquote>
+<p>Retrieves the server MediaCache configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_5">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheConfig3($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_5">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_5">Return type</h3>
+<p><a href="../../Model/MediaCacheConfig3/"><strong>\Model\MediaCacheConfig3</strong></a></p>
+<h3 id="authorization_5">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_5">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacacheconfigadv"><strong>getMediaCacheConfigAdv</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheConfigAdv getMediaCacheConfigAdv($serverName)</p>
+</blockquote>
+<p>Retrieves the advanced MediaCache configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_6">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheConfigAdv($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_6">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_6">Return type</h3>
+<p><a href="../../Model/MediaCacheConfigAdv/"><strong>\Model\MediaCacheConfigAdv</strong></a></p>
+<h3 id="authorization_6">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_6">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachesourceconfig"><strong>getMediaCacheSourceConfig</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheSourceConfig getMediaCacheSourceConfig($serverName)</p>
+</blockquote>
+<p>Retrieves the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_7">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheSourceConfig($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheSourceConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_7">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_7">Return type</h3>
+<p><a href="../../Model/MediaCacheSourceConfig/"><strong>\Model\MediaCacheSourceConfig</strong></a></p>
+<h3 id="authorization_7">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_7">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachesourceconfig3"><strong>getMediaCacheSourceConfig3</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheSourceConfig3 getMediaCacheSourceConfig3($serverName, $sourceName)</p>
+</blockquote>
+<p>Retrieves the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_8">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+
+try {
+    $result = $api_instance-&gt;getMediaCacheSourceConfig3($serverName, $sourceName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheSourceConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_8">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_8">Return type</h3>
+<p><a href="../../Model/MediaCacheSourceConfig3/"><strong>\Model\MediaCacheSourceConfig3</strong></a></p>
+<h3 id="authorization_8">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_8">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachesourceconfigadv"><strong>getMediaCacheSourceConfigAdv</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheSourceConfigAdv getMediaCacheSourceConfigAdv($serverName, $sourceName)</p>
+</blockquote>
+<p>Retrieves the specified advanced MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_9">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+
+try {
+    $result = $api_instance-&gt;getMediaCacheSourceConfigAdv($serverName, $sourceName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheSourceConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_9">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_9">Return type</h3>
+<p><a href="../../Model/MediaCacheSourceConfigAdv/"><strong>\Model\MediaCacheSourceConfigAdv</strong></a></p>
+<h3 id="authorization_9">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_9">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachesourceconfigadv3"><strong>getMediaCacheSourceConfigAdv3</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheSourceConfigAdv3 getMediaCacheSourceConfigAdv3($serverName, $sourceName)</p>
+</blockquote>
+<p>Retrieves the specified advanced MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_10">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+
+try {
+    $result = $api_instance-&gt;getMediaCacheSourceConfigAdv3($serverName, $sourceName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheSourceConfigAdv3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_10">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_10">Return type</h3>
+<p><a href="../../Model/MediaCacheSourceConfigAdv3/"><strong>\Model\MediaCacheSourceConfigAdv3</strong></a></p>
+<h3 id="authorization_10">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_10">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachesourcesconfig"><strong>getMediaCacheSourcesConfig</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheSourcesConfig getMediaCacheSourcesConfig($serverName)</p>
+</blockquote>
+<p>Retrieves the list of MediaCache Sources</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_11">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheSourcesConfig($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheSourcesConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_11">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_11">Return type</h3>
+<p><a href="../../Model/MediaCacheSourcesConfig/"><strong>\Model\MediaCacheSourcesConfig</strong></a></p>
+<h3 id="authorization_11">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_11">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachesourcesconfig3"><strong>getMediaCacheSourcesConfig3</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheSourcesConfig3 getMediaCacheSourcesConfig3($serverName)</p>
+</blockquote>
+<p>Retrieves the list of MediaCache Sources</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_12">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheSourcesConfig3($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheSourcesConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_12">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_12">Return type</h3>
+<p><a href="../../Model/MediaCacheSourcesConfig3/"><strong>\Model\MediaCacheSourcesConfig3</strong></a></p>
+<h3 id="authorization_12">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_12">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachestoreconfig"><strong>getMediaCacheStoreConfig</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheStoreConfig getMediaCacheStoreConfig($serverName)</p>
+</blockquote>
+<p>Retrieves the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_13">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheStoreConfig($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheStoreConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_13">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_13">Return type</h3>
+<p><a href="../../Model/MediaCacheStoreConfig/"><strong>\Model\MediaCacheStoreConfig</strong></a></p>
+<h3 id="authorization_13">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_13">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachestoreconfig3"><strong>getMediaCacheStoreConfig3</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheStoreConfig3 getMediaCacheStoreConfig3($serverName, $storeName)</p>
+</blockquote>
+<p>Retrieves the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_14">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$storeName = &quot;storeName_example&quot;; // string | 
+
+try {
+    $result = $api_instance-&gt;getMediaCacheStoreConfig3($serverName, $storeName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheStoreConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_14">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>storeName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_14">Return type</h3>
+<p><a href="../../Model/MediaCacheStoreConfig3/"><strong>\Model\MediaCacheStoreConfig3</strong></a></p>
+<h3 id="authorization_14">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_14">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachestoreconfigadv"><strong>getMediaCacheStoreConfigAdv</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheStoreConfigAdv getMediaCacheStoreConfigAdv($serverName, $storeName)</p>
+</blockquote>
+<p>Retrieves the specified advanced MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_15">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$storeName = &quot;storeName_example&quot;; // string | 
+
+try {
+    $result = $api_instance-&gt;getMediaCacheStoreConfigAdv($serverName, $storeName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheStoreConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_15">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>storeName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_15">Return type</h3>
+<p><a href="../../Model/MediaCacheStoreConfigAdv/"><strong>\Model\MediaCacheStoreConfigAdv</strong></a></p>
+<h3 id="authorization_15">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_15">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachestoresconfig"><strong>getMediaCacheStoresConfig</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheStoresConfig getMediaCacheStoresConfig($serverName)</p>
+</blockquote>
+<p>Retrieves the list of MediaCache Stores</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_16">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheStoresConfig($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheStoresConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_16">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_16">Return type</h3>
+<p><a href="../../Model/MediaCacheStoresConfig/"><strong>\Model\MediaCacheStoresConfig</strong></a></p>
+<h3 id="authorization_16">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_16">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="getmediacachestoresconfig3"><strong>getMediaCacheStoresConfig3</strong></h1>
+<blockquote>
+<p>\Model\MediaCacheStoresConfig3 getMediaCacheStoresConfig3($serverName)</p>
+</blockquote>
+<p>Retrieves the list of MediaCache Stores</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_17">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+
+try {
+    $result = $api_instance-&gt;getMediaCacheStoresConfig3($serverName);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;getMediaCacheStoresConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_17">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_17">Return type</h3>
+<p><a href="../../Model/MediaCacheStoresConfig3/"><strong>\Model\MediaCacheStoresConfig3</strong></a></p>
+<h3 id="authorization_17">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_17">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacacheconfigadv"><strong>postMediaCacheConfigAdv</strong></h1>
+<blockquote>
+<p>postMediaCacheConfigAdv($serverName, $body)</p>
+</blockquote>
+<p>Adds an advanced MediaCache configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_18">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheConfigAdv(); // \Model\MediaCacheConfigAdv | 
+
+try {
+    $api_instance-&gt;postMediaCacheConfigAdv($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_18">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheConfigAdv.md"><strong>\Model\MediaCacheConfigAdv</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_18">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_18">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_18">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachesourceconfig"><strong>postMediaCacheSourceConfig</strong></h1>
+<blockquote>
+<p>postMediaCacheSourceConfig($serverName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_19">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheSourceConfig(); // \Model\MediaCacheSourceConfig | 
+
+try {
+    $api_instance-&gt;postMediaCacheSourceConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheSourceConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_19">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfig.md"><strong>\Model\MediaCacheSourceConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_19">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_19">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_19">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachesourceconfig3"><strong>postMediaCacheSourceConfig3</strong></h1>
+<blockquote>
+<p>postMediaCacheSourceConfig3($serverName, $sourceName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_20">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+$body = new \Model\MediaCacheSourceConfig3(); // \Model\MediaCacheSourceConfig3 | 
+
+try {
+    $api_instance-&gt;postMediaCacheSourceConfig3($serverName, $sourceName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheSourceConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_20">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfig3.md"><strong>\Model\MediaCacheSourceConfig3</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_20">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_20">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_20">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachesourceconfigadv"><strong>postMediaCacheSourceConfigAdv</strong></h1>
+<blockquote>
+<p>postMediaCacheSourceConfigAdv($serverName, $sourceName, $body)</p>
+</blockquote>
+<p>Adds the specified advanced MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_21">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+$body = new \Model\MediaCacheSourceConfigAdv(); // \Model\MediaCacheSourceConfigAdv | 
+
+try {
+    $api_instance-&gt;postMediaCacheSourceConfigAdv($serverName, $sourceName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheSourceConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_21">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfigAdv.md"><strong>\Model\MediaCacheSourceConfigAdv</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_21">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_21">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_21">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachesourceconfigadv3"><strong>postMediaCacheSourceConfigAdv3</strong></h1>
+<blockquote>
+<p>postMediaCacheSourceConfigAdv3($serverName, $sourceName, $body)</p>
+</blockquote>
+<p>Adds the specified advanced MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_22">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+$body = new \Model\MediaCacheSourceConfigAdv3(); // \Model\MediaCacheSourceConfigAdv3 | 
+
+try {
+    $api_instance-&gt;postMediaCacheSourceConfigAdv3($serverName, $sourceName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheSourceConfigAdv3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_22">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfigAdv3.md"><strong>\Model\MediaCacheSourceConfigAdv3</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_22">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_22">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_22">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachesourcesconfig"><strong>postMediaCacheSourcesConfig</strong></h1>
+<blockquote>
+<p>postMediaCacheSourcesConfig($serverName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Source to the list</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_23">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheSourceConfig(); // \Model\MediaCacheSourceConfig | 
+
+try {
+    $api_instance-&gt;postMediaCacheSourcesConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheSourcesConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_23">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfig.md"><strong>\Model\MediaCacheSourceConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_23">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_23">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_23">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachesourcesconfig3"><strong>postMediaCacheSourcesConfig3</strong></h1>
+<blockquote>
+<p>postMediaCacheSourcesConfig3($serverName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Source to the list</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_24">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheSourceConfig(); // \Model\MediaCacheSourceConfig | 
+
+try {
+    $api_instance-&gt;postMediaCacheSourcesConfig3($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheSourcesConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_24">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfig.md"><strong>\Model\MediaCacheSourceConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_24">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_24">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_24">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachestoreconfig"><strong>postMediaCacheStoreConfig</strong></h1>
+<blockquote>
+<p>postMediaCacheStoreConfig($serverName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_25">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheStoreConfig(); // \Model\MediaCacheStoreConfig | 
+
+try {
+    $api_instance-&gt;postMediaCacheStoreConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheStoreConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_25">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfig.md"><strong>\Model\MediaCacheStoreConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_25">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_25">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_25">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachestoreconfig3"><strong>postMediaCacheStoreConfig3</strong></h1>
+<blockquote>
+<p>postMediaCacheStoreConfig3($serverName, $storeName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_26">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$storeName = &quot;storeName_example&quot;; // string | 
+$body = new \Model\MediaCacheStoreConfig3(); // \Model\MediaCacheStoreConfig3 | 
+
+try {
+    $api_instance-&gt;postMediaCacheStoreConfig3($serverName, $storeName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheStoreConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_26">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>storeName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfig3.md"><strong>\Model\MediaCacheStoreConfig3</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_26">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_26">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_26">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachestoreconfigadv"><strong>postMediaCacheStoreConfigAdv</strong></h1>
+<blockquote>
+<p>postMediaCacheStoreConfigAdv($serverName, $storeName, $body)</p>
+</blockquote>
+<p>Adds the specified advanced MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_27">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$storeName = &quot;storeName_example&quot;; // string | 
+$body = new \Model\MediaCacheStoreConfigAdv(); // \Model\MediaCacheStoreConfigAdv | 
+
+try {
+    $api_instance-&gt;postMediaCacheStoreConfigAdv($serverName, $storeName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheStoreConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_27">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>storeName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfigAdv.md"><strong>\Model\MediaCacheStoreConfigAdv</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_27">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_27">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_27">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachestoresconfig"><strong>postMediaCacheStoresConfig</strong></h1>
+<blockquote>
+<p>postMediaCacheStoresConfig($serverName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Store to the list</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_28">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheStoreConfig(); // \Model\MediaCacheStoreConfig | 
+
+try {
+    $api_instance-&gt;postMediaCacheStoresConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheStoresConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_28">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfig.md"><strong>\Model\MediaCacheStoreConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_28">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_28">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_28">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="postmediacachestoresconfig3"><strong>postMediaCacheStoresConfig3</strong></h1>
+<blockquote>
+<p>postMediaCacheStoresConfig3($serverName, $body)</p>
+</blockquote>
+<p>Adds the specified MediaCache Store to the list</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_29">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheStoreConfig(); // \Model\MediaCacheStoreConfig | 
+
+try {
+    $api_instance-&gt;postMediaCacheStoresConfig3($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;postMediaCacheStoresConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_29">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfig.md"><strong>\Model\MediaCacheStoreConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_29">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_29">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_29">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacacheconfig"><strong>putMediaCacheConfig</strong></h1>
+<blockquote>
+<p>putMediaCacheConfig($serverName, $body)</p>
+</blockquote>
+<p>Updates the server MediaCache configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_30">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheConfig(); // \Model\MediaCacheConfig | 
+
+try {
+    $api_instance-&gt;putMediaCacheConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_30">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheConfig.md"><strong>\Model\MediaCacheConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_30">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_30">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_30">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacacheconfig3"><strong>putMediaCacheConfig3</strong></h1>
+<blockquote>
+<p>putMediaCacheConfig3($serverName, $body)</p>
+</blockquote>
+<p>Updates the server MediaCache configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_31">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheConfig3(); // \Model\MediaCacheConfig3 | 
+
+try {
+    $api_instance-&gt;putMediaCacheConfig3($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_31">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheConfig3.md"><strong>\Model\MediaCacheConfig3</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_31">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_31">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_31">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacacheconfigadv"><strong>putMediaCacheConfigAdv</strong></h1>
+<blockquote>
+<p>putMediaCacheConfigAdv($serverName, $body)</p>
+</blockquote>
+<p>Updates the advanced MediaCache configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_32">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheConfigAdv(); // \Model\MediaCacheConfigAdv | 
+
+try {
+    $api_instance-&gt;putMediaCacheConfigAdv($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_32">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheConfigAdv.md"><strong>\Model\MediaCacheConfigAdv</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_32">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_32">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_32">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacachesourceconfig"><strong>putMediaCacheSourceConfig</strong></h1>
+<blockquote>
+<p>putMediaCacheSourceConfig($serverName, $body)</p>
+</blockquote>
+<p>Updates the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_33">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheSourceConfig(); // \Model\MediaCacheSourceConfig | 
+
+try {
+    $api_instance-&gt;putMediaCacheSourceConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheSourceConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_33">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfig.md"><strong>\Model\MediaCacheSourceConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_33">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_33">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_33">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacachesourceconfig3"><strong>putMediaCacheSourceConfig3</strong></h1>
+<blockquote>
+<p>putMediaCacheSourceConfig3($serverName, $sourceName, $body)</p>
+</blockquote>
+<p>Updates the specified MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_34">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+$body = new \Model\MediaCacheSourceConfig3(); // \Model\MediaCacheSourceConfig3 | 
+
+try {
+    $api_instance-&gt;putMediaCacheSourceConfig3($serverName, $sourceName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheSourceConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_34">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfig3.md"><strong>\Model\MediaCacheSourceConfig3</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_34">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_34">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_34">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacachesourceconfigadv"><strong>putMediaCacheSourceConfigAdv</strong></h1>
+<blockquote>
+<p>putMediaCacheSourceConfigAdv($serverName, $sourceName, $body)</p>
+</blockquote>
+<p>Updates the specified advanced MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_35">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+$body = new \Model\MediaCacheSourceConfigAdv(); // \Model\MediaCacheSourceConfigAdv | 
+
+try {
+    $api_instance-&gt;putMediaCacheSourceConfigAdv($serverName, $sourceName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheSourceConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_35">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfigAdv.md"><strong>\Model\MediaCacheSourceConfigAdv</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_35">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_35">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_35">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacachesourceconfigadv3"><strong>putMediaCacheSourceConfigAdv3</strong></h1>
+<blockquote>
+<p>putMediaCacheSourceConfigAdv3($serverName, $sourceName, $body)</p>
+</blockquote>
+<p>Updates the specified advanced MediaCache Source configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_36">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$sourceName = &quot;sourceName_example&quot;; // string | 
+$body = new \Model\MediaCacheSourceConfigAdv3(); // \Model\MediaCacheSourceConfigAdv3 | 
+
+try {
+    $api_instance-&gt;putMediaCacheSourceConfigAdv3($serverName, $sourceName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheSourceConfigAdv3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_36">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>sourceName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheSourceConfigAdv3.md"><strong>\Model\MediaCacheSourceConfigAdv3</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_36">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_36">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_36">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacachestoreconfig"><strong>putMediaCacheStoreConfig</strong></h1>
+<blockquote>
+<p>putMediaCacheStoreConfig($serverName, $body)</p>
+</blockquote>
+<p>Updates the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_37">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$body = new \Model\MediaCacheStoreConfig(); // \Model\MediaCacheStoreConfig | 
+
+try {
+    $api_instance-&gt;putMediaCacheStoreConfig($serverName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheStoreConfig: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_37">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfig.md"><strong>\Model\MediaCacheStoreConfig</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_37">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_37">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_37">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacachestoreconfig3"><strong>putMediaCacheStoreConfig3</strong></h1>
+<blockquote>
+<p>putMediaCacheStoreConfig3($serverName, $storeName, $body)</p>
+</blockquote>
+<p>Updates the specified MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_38">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$storeName = &quot;storeName_example&quot;; // string | 
+$body = new \Model\MediaCacheStoreConfig3(); // \Model\MediaCacheStoreConfig3 | 
+
+try {
+    $api_instance-&gt;putMediaCacheStoreConfig3($serverName, $storeName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheStoreConfig3: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_38">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>storeName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfig3.md"><strong>\Model\MediaCacheStoreConfig3</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_38">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_38">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_38">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p>
+<h1 id="putmediacachestoreconfigadv"><strong>putMediaCacheStoreConfigAdv</strong></h1>
+<blockquote>
+<p>putMediaCacheStoreConfigAdv($serverName, $storeName, $body)</p>
+</blockquote>
+<p>Updates the specified advanced MediaCache Store configuration</p>
+<p>This API is available in builds 15089 or later.</p>
+<h3 id="example_39">Example</h3>
+<pre><code class="php">&lt;?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+$api_instance = new WowzaApi\Api\VserversserverNamemediacacheApi();
+$serverName = &quot;serverName_example&quot;; // string | Reserved for future use
+$storeName = &quot;storeName_example&quot;; // string | 
+$body = new \Model\MediaCacheStoreConfigAdv(); // \Model\MediaCacheStoreConfigAdv | 
+
+try {
+    $api_instance-&gt;putMediaCacheStoreConfigAdv($serverName, $storeName, $body);
+} catch (Exception $e) {
+    echo 'Exception when calling VserversserverNamemediacacheApi-&gt;putMediaCacheStoreConfigAdv: ', $e-&gt;getMessage(), PHP_EOL;
+}
+?&gt;
+</code></pre>
+
+<h3 id="parameters_39">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>serverName</strong></td>
+<td><strong>string</strong></td>
+<td>Reserved for future use</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>storeName</strong></td>
+<td><strong>string</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>body</strong></td>
+<td><a href="../Model/\Model\MediaCacheStoreConfigAdv.md"><strong>\Model\MediaCacheStoreConfigAdv</strong></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="return-type_39">Return type</h3>
+<p>void (empty response body)</p>
+<h3 id="authorization_39">Authorization</h3>
+<p>No authorization required</p>
+<h3 id="http-request-headers_39">HTTP request headers</h3>
+<ul>
+<li><strong>Content-Type</strong>: application/xml, text/xml, application/json</li>
+<li><strong>Accept</strong>: application/xml, text/xml, application/json</li>
+</ul>
+<p><a href="#">[Back to top]</a> <a href="../../README.md#documentation-for-api-endpoints">[Back to API list]</a> <a href="../../README.md#documentation-for-models">[Back to Model list]</a> <a href="../../README.md">[Back to README]</a></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
